@@ -184,7 +184,7 @@ def get_ip_location_and_write():
                         country = data.get('country', 'Unknown')
                 except:
                     pass
-                f.write(f"{ip}= ({country})\n")
+                f.write(f"{ip} ({country})\n")
         print(f"[*] 可用 IP 已写入文件：{OUTPUT_FILE}\n")
     except Exception as e:
         print(f"[!] 写入文件时出错：{e}")
